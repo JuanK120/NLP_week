@@ -111,17 +111,25 @@ recall_NOT = true_positives_NOT / (true_positives_NOT + false_negatives_NOT + 1e
 f1_OFF = 2 * precision_OFF * recall_OFF / (precision_OFF + recall_OFF + 1e-6)
 f1_NOT = 2 * precision_NOT * recall_NOT / (precision_NOT + recall_NOT + 1e-6)
 
+precision_w_avg_a = (count_NOT/len_set_a) * precision_NOT + (count_OFF/len_set_a) * precision_OFF
+recall_w_avg_a = (count_NOT/len_set_a) * recall_NOT + (count_OFF/len_set_a) * recall_OFF
+f1_w_avg_a = (count_NOT/len_set_a) * f1_NOT + (count_OFF/len_set_a) * f1_OFF
+
+
  
 print('-'*40 + '\n')
 print(f"Number of OFF items: {count_OFF}")
 print(f"Number of NOT items: {count_NOT}")
-print(f"Accuracy on Level A: {accuracy_a:.4f}")
+print(f"Accuracy on Level A: {accuracy_a:.4f}\n")
 print(f"Precision_OFF: {precision_OFF:.4f}")
 print(f"Recall_OFF:    {recall_OFF:.4f}")
-print(f"F1_OFF:        {f1_OFF:.4f}")
+print(f"F1_OFF:        {f1_OFF:.4f}\n")
 print(f"Precision_NOT: {precision_NOT:.4f}")
 print(f"Recall_NOT:    {recall_NOT:.4f}")
 print(f"F1_NOT:        {f1_NOT:.4f}\n")
+print(f"precision_w_avg_a:        {precision_w_avg_a:.4f}")
+print(f"recall_w_avg_a:        {recall_w_avg_a:.4f}")
+print(f"f1_w_avg_a:        {f1_w_avg_a:.4f}\n")
 
 
 # Evaluate model on test set B 'UNT': 0, 'TIN': 1
@@ -187,17 +195,24 @@ recall_TIN = true_positives_TIN / (true_positives_TIN + false_negatives_TIN + 1e
 f1_UNT = 2 * precision_UNT * recall_UNT / (precision_UNT + recall_UNT + 1e-6)
 f1_TIN = 2 * precision_TIN * recall_TIN / (precision_TIN + recall_TIN + 1e-6)
 
+precision_w_avg_b = (count_UNT/len_set_b) * precision_UNT + (count_TIN/len_set_b) * precision_TIN
+recall_w_avg_b = (count_UNT/len_set_b) * recall_UNT + (count_TIN/len_set_b) * recall_TIN
+f1_w_avg_b = (count_UNT/len_set_b) * f1_UNT + (count_TIN/len_set_b) * f1_TIN
+
 
 print('-'*40 + '\n')
 print(f"Number of UNT items: {count_UNT}")
 print(f"Number of TIN items: {count_TIN}")
-print(f"Accuracy on Level B: {accuracy_b:.4f}")
+print(f"Accuracy on Level B: {accuracy_b:.4f}\n")
 print(f"Precision_UNT: {precision_UNT:.4f}")
 print(f"Recall_UNT:    {recall_UNT:.4f}")
-print(f"F1_UNT:        {f1_UNT:.4f}")
+print(f"F1_UNT:        {f1_UNT:.4f}\n")
 print(f"Precision_TIN: {precision_TIN:.4f}")
 print(f"Recall_TIN:    {recall_TIN:.4f}")
 print(f"F1_TIN:        {f1_TIN:.4f}\n")
+print(f"precision_w_avg_b:        {precision_w_avg_b:.4f}")
+print(f"recall_w_avg_b:        {recall_w_avg_b:.4f}")
+print(f"f1_w_avg_b:        {f1_w_avg_b:.4f}\n")
 
 # Evaluate model on test set C 'IND': 0, 'GRP': 1, 'OTH': 2
 number_correct_answers_c = 0
@@ -278,18 +293,25 @@ f1_IND = 2 * precision_IND * recall_IND / (precision_IND + recall_IND + 1e-6)
 f1_GRP = 2 * precision_GRP * recall_GRP / (precision_GRP + recall_GRP + 1e-6)
 f1_OTH = 2 * precision_OTH * recall_OTH / (precision_OTH + recall_OTH + 1e-6)
 
+precision_w_avg_c = (count_IND/len_set_c) * precision_IND + (count_GRP/len_set_c) * precision_GRP + (count_OTH/len_set_c) * precision_OTH
+recall_w_avg_c = (count_IND/len_set_c) * recall_IND + (count_GRP/len_set_c) * recall_GRP + (count_OTH/len_set_c) * recall_OTH
+f1_w_avg_c = (count_IND/len_set_c) * f1_IND + (count_GRP/len_set_c) * f1_GRP + (count_OTH/len_set_c) * f1_OTH
+
 print('-'*40 + '\n')
 print(f"Number of IND items: {count_IND}")
 print(f"Number of GRP items: {count_GRP}")
 print(f"Number of OTH items: {count_OTH}")
-print(f"Accuracy on Level C: {accuracy_c:.4f}")
+print(f"Accuracy on Level C: {accuracy_c:.4f}\n")
 print(f"Precision_IND: {precision_IND:.4f}")
 print(f"Recall_IND:    {recall_IND:.4f}")
-print(f"F1_IND:        {f1_IND:.4f}")
+print(f"F1_IND:        {f1_IND:.4f}\n")
 print(f"Precision_GRP: {precision_GRP:.4f}")
 print(f"Recall_GRP:    {recall_GRP:.4f}")
-print(f"F1_GRP:        {f1_GRP:.4f}")
+print(f"F1_GRP:        {f1_GRP:.4f}\n")
 print(f"Precision_OTH: {precision_OTH:.4f}")
 print(f"Recall_OTH:    {recall_OTH:.4f}")
 print(f"F1_OTH:        {f1_OTH:.4f}\n")
+print(f"precision_w_avg_c:        {precision_w_avg_c:.4f}")
+print(f"recall_w_avg_c:        {recall_w_avg_c:.4f}")
+print(f"f1_w_avg_c:        {f1_w_avg_c:.4f}\n")
 

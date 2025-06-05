@@ -58,7 +58,8 @@ def get_dataframe(file):
     dataset = segment_hashtags(dataset)
     dataset = eliminate_urls(dataset)
     dataset = separate_emoji_words(dataset)
-    dataset = remove_nonsense_from_dataframe_please(dataset)
+    #dataset = remove_nonsense_from_dataframe_please(dataset)
+    #
 
     subset_a = dataset[['id','tweet','subtask_a']]
 
@@ -78,6 +79,7 @@ def get_test_dataframe(file):
     dataset = segment_hashtags(dataset)
     dataset = eliminate_urls(dataset)
     dataset = separate_emoji_words(dataset)
+    #dataset = remove_nonsense_from_dataframe_please(dataset)
 
     return dataset
 

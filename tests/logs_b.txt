@@ -10,6 +10,10 @@ Tweet: ......bitch what URL
 True label: 0
 Predicted label: 1
 ----------------------------------------
+Tweet: *voice in my head while I transfer money to my credit card* “bullshit that I bought and have to pay for”
+True label: 0
+Predicted label: 1
+----------------------------------------
 Tweet: And apparently I'm committed to going to a new level since I used the key.  Well FUCK.  Curiosity killed the Cat(hy)
 True label: 0
 Predicted label: 1
@@ -58,6 +62,10 @@ Tweet: 2018 not surprised it starts from the top!!!  Karma a bitch watch!!!! URL
 True label: 0
 Predicted label: 1
 ----------------------------------------
+Tweet: antifa is recruiting for a designated terrorist organization URL
+True label: 1
+Predicted label: 0
+----------------------------------------
 Tweet: $b album definitely worth the fucking wait
 True label: 0
 Predicted label: 1
@@ -77,10 +85,6 @@ Predicted label: 0
 Tweet: sugar daddy Retweet if you are under 30 and would like share memes with each other and we can talk about dumb shit. Cuz baby I’m broke as shit but this love rich URL
 True label: 0
 Predicted label: 1
-----------------------------------------
-Tweet: geoffrey owens niggas don’t really understand...levels to career pursuits
-True label: 1
-Predicted label: 0
 ----------------------------------------
 Tweet: Am I a dickhead ???? Probably yes
 True label: 1
@@ -109,6 +113,14 @@ Predicted label: 0
 Tweet: o it nb. She is the worst public defender. Trailing her pen uner the words.
 True label: 0
 Predicted label: 1
+----------------------------------------
+Tweet: @USER rosie makes me nauseous!face vomiting URL
+True label: 1
+Predicted label: 0
+----------------------------------------
+Tweet: $1500 for a phone. You all are fucking dumb.
+True label: 1
+Predicted label: 0
 ----------------------------------------
 Tweet: how to get people out of your home  Tell them that you're a vampire...then threaten to eat them if they don't get their asses out.  *shrugs*  What?  Problem?
 True label: 0
