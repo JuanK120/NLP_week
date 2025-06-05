@@ -14,7 +14,7 @@ def compute_metrics(p):
     preds = np.argmax(p.predictions, axis=1)
     return accuracy.compute(predictions=preds, references=p.label_ids)
 
-print(TrainingArguments.__module__)
+#print(TrainingArguments.__module__)
 
 def get_train_args(results_route):
     return TrainingArguments(
@@ -54,7 +54,7 @@ tokenized_dataset_b = dataset_dict_b.map(tokenize, batched=True)
 tokenized_dataset_c = dataset_dict_c.map(tokenize, batched=True)
 
 
-print(tokenized_dataset_a,tokenized_dataset_b,tokenized_dataset_c)
+#print(tokenized_dataset_a,tokenized_dataset_b,tokenized_dataset_c)
 
 trainer_a = Trainer(
     model=model_a,
@@ -80,8 +80,8 @@ trainer_c = Trainer(
     compute_metrics=compute_metrics,
 )
 
-trainer_a.train()
-trainer_b.train()
+#trainer_a.train()
+#trainer_b.train()
 trainer_c.train()
 
 
