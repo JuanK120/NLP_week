@@ -26,6 +26,13 @@ def separate_emoji_word(tweet):
     tweet = tweet.replace('_', " ")
     return tweet
 
+def nonsense_delete(tweet):
+    tweet = tweet.replace('*', "")
+    tweet = tweet.replace('"', '')
+    tweet = tweet.replace('•', '')
+    tweet = tweet.replace('!', '')
+    return tweet
+
 def segment_hashtags(dataframe):
     dataframe['tweet'] = dataframe['tweet'].apply(segment_tweet)
     return dataframe    
@@ -38,6 +45,11 @@ def separate_emoji_words(dataframe):
     dataframe['tweet'] = dataframe['tweet'].apply(separate_emoji_word)
     return dataframe
 
+def remove_nonsense_from_dataframe_please(dataframe):
+    dataframe['tweet'] = dataframe['tweet'].apply(nonsense_delete)
+    return dataframe
+                                          
+
 def get_dataframe(file):
 
     dataset = pd.read_csv(file,sep='\t')
@@ -46,6 +58,7 @@ def get_dataframe(file):
     dataset = segment_hashtags(dataset)
     dataset = eliminate_urls(dataset)
     dataset = separate_emoji_words(dataset)
+    dataset = remove_nonsense_from_dataframe_please(dataset)
 
     subset_a = dataset[['id','tweet','subtask_a']]
 

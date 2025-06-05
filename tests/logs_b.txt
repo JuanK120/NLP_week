@@ -1,124 +1,120 @@
-Tweet:. . . What the fuck did he do this time?
-True label:1
-Predicted label:0
+Tweet: . . . What the fuck did he do this time?
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:@USER Nigga ware da hits at
-True label:0
-Predicted label:1
+Tweet: @USER Nigga ware da hits at
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:......bitch what URL
-True label:0
-Predicted label:1
+Tweet: ......bitch what URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:*voice in my head while I transfer money to my credit card* “bullshit that I bought and have to pay for”
-True label:0
-Predicted label:1
+Tweet: And apparently I'm committed to going to a new level since I used the key.  Well FUCK.  Curiosity killed the Cat(hy)
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:And apparently I'm committed to going to a new level since I used the key.  Well FUCK.  Curiosity killed the Cat(hy)
-True label:0
-Predicted label:1
+Tweet: sierra burgess is a loser  She is me when my phone dings face with tears of joy
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:2 weeks of resp done and I still don't know shit my ass still on vacation mode sleepy face
-True label:0
-Predicted label:1
+Tweet: 2 weeks of resp done and I still don't know shit my ass still on vacation mode sleepy face
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:benghazi  haiti  uranium one  seth rich What more does the justice department need? No double standards! Just because you're Rich and Powerful doesn't mean you can rob, seal and murder! drain the swamp  hillary for prison  vote red maga URL
-True label:0
-Predicted label:1
+Tweet: benghazi  haiti  uranium one  seth rich What more does the justice department need? No double standards! Just because you're Rich and Powerful doesn't mean you can rob, seal and murder! drain the swamp  hillary for prison  vote red maga URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:Andman shrugging medium skin tone females b on the same shit URL
-True label:1
-Predicted label:0
+Tweet: Andman shrugging medium skin tone females b on the same shit URL
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:Antonia Evans was either sex trafficked or cremated.
-True label:1
-Predicted label:0
+Tweet: Antonia Evans was either sex trafficked or cremated.
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:$uicideboy$ ON HALLOWEEN its aboout to get sooooo FUCKING spooky
-True label:0
-Predicted label:1
+Tweet: $uicideboy$ ON HALLOWEEN its aboout to get sooooo FUCKING spooky
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:breaking. greece Molotov cocktails fly after protest honouring killed antifa arti... URL via @USER URL
-True label:0
-Predicted label:1
+Tweet: breaking. greece Molotov cocktails fly after protest honouring killed antifa arti... URL via @USER URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:repost theleadersmindset • • • round pushpinHola Leaders!fire check markType “READY” if you are ready to follow this steps. - “ Set goals, stay quiet about them, smash the shit out of them, clap for your damn… URL
-True label:0
-Predicted label:1
+Tweet: repost theleadersmindset • • • round pushpinHola Leaders!fire check markType “READY” if you are ready to follow this steps. - “ Set goals, stay quiet about them, smash the shit out of them, clap for your damn… URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:50 Cent Calls Out Joe Budden's Bullshit" On Instagram URL URL
-True label:1
-Predicted label:0
+Tweet: *Extremely* back on my bullshit. URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:2018 not surprised it starts from the top!!!  Karma a bitch watch!!!! URL
-True label:0
-Predicted label:1
+Tweet: 50 Cent Calls Out Joe Budden's Bullshit" On Instagram URL URL
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:1 tf. He saw that shit. URL
-True label:0
-Predicted label:1
+Tweet: 2018 not surprised it starts from the top!!!  Karma a bitch watch!!!! URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:$b album definitely worth the fucking wait
-True label:0
-Predicted label:1
+Tweet: $b album definitely worth the fucking wait
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:Ain’t nobody shit if you ask me... including myself.
-True label:0
-Predicted label:1
+Tweet: Ain’t nobody shit if you ask me... including myself.
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:life is but epu when you have sex anytime you want but you are single
-True label:0
-Predicted label:1
+Tweet: life is but epu when you have sex anytime you want but you are single
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:// SO WANT TO KICK TWITTERFUCK ASS.
-True label:1
-Predicted label:0
+Tweet: // SO WANT TO KICK TWITTERFUCK ASS.
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:sugar daddy Retweet if you are under 30 and would like share memes with each other and we can talk about dumb shit. Cuz baby I’m broke as shit but this love rich URL
-True label:0
-Predicted label:1
+Tweet: sugar daddy Retweet if you are under 30 and would like share memes with each other and we can talk about dumb shit. Cuz baby I’m broke as shit but this love rich URL
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:Am I a dickhead ???? Probably yes
-True label:1
-Predicted label:0
+Tweet: geoffrey owens niggas don’t really understand...levels to career pursuits
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:(cr1tikal voice) smef my ass cheeks
-True label:0
-Predicted label:1
+Tweet: Am I a dickhead ???? Probably yes
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:28, 27, 25 and 21 but like,, it’s still really miserable and unpleasant for us?? And like they even told me how they weren’t happy and would have got divorced before I was even born so I’m like cool cool I was literally born into hatred that’s awesome no wonder I’m such a fuckup
-True label:0
-Predicted label:1
+Tweet: (cr1tikal voice) smef my ass cheeks
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:0-1 lost my acca on the first fucking fight cba
-True label:0
-Predicted label:1
+Tweet: 28, 27, 25 and 21 but like,, it’s still really miserable and unpleasant for us?? And like they even told me how they weren’t happy and would have got divorced before I was even born so I’m like cool cool I was literally born into hatred that’s awesome no wonder I’m such a fuckup
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:Anytime I randomly bust out laughing it’s because I remembered some dumb shit Albria said loudly crying faceloudly crying face
-True label:1
-Predicted label:0
+Tweet: 0-1 lost my acca on the first fucking fight cba
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:5k Bitches party popperblue heart
-True label:0
-Predicted label:1
+Tweet: 5k Bitches party popperblue heart
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:And she has a pet??? Fucking disgusting URL
-True label:1
-Predicted label:0
+Tweet: And she has a pet??? Fucking disgusting URL
+True label: 1
+Predicted label: 0
 ----------------------------------------
-Tweet:o it nb. She is the worst public defender. Trailing her pen uner the words.
-True label:0
-Predicted label:1
+Tweet: o it nb. She is the worst public defender. Trailing her pen uner the words.
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:how to get people out of your home  Tell them that you're a vampire...then threaten to eat them if they don't get their asses out.  *shrugs*  What?  Problem?
-True label:0
-Predicted label:1
+Tweet: how to get people out of your home  Tell them that you're a vampire...then threaten to eat them if they don't get their asses out.  *shrugs*  What?  Problem?
+True label: 0
+Predicted label: 1
 ----------------------------------------
-Tweet:stop etc he co par? Fuck you all middle fingermiddle fingermiddle fingermiddle fingermiddle finger Que florezcan mil Baby Etchecopar sunflowersunflowersunflower
-True label:1
-Predicted label:0
-----------------------------------------
-Tweet:3 people just unfollowed me for talking about merlin sorry y'all im still up covinsky's ass im just waiting for a psisly sequel announcement ive run out of witty and funny tweets about tatbilb i am drained
-True label:0
-Predicted label:1
+Tweet: 3 people just unfollowed me for talking about merlin sorry y'all im still up covinsky's ass im just waiting for a psisly sequel announcement ive run out of witty and funny tweets about tatbilb i am drained
+True label: 0
+Predicted label: 1
 ----------------------------------------

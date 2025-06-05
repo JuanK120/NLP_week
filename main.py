@@ -43,7 +43,8 @@ dataset_dict_a = dataset_dict_a.map(lambda x: {'label': label_map_a[x['label']]}
 
 dataset_dict_b = Dataset.from_pandas(subset_b.rename(columns={'tweet': 'text', 'subtask_b': 'label'}))
 label_map_b = {'UNT': 0, 'TIN': 1}
-dataset_dict_b = dataset_dict_b.map(lambda x: {'label': label_map_b[x['label']]})
+dataset_dict_b = dataset_dict_b.map(lambda x: {'label': label_map_b[x['label']]}) 
+
 
 dataset_dict_c = Dataset.from_pandas(subset_c.rename(columns={'tweet': 'text', 'subtask_c': 'label'}))
 label_map_c = {'IND': 0, 'GRP': 1, 'OTH': 2}
@@ -56,33 +57,36 @@ tokenized_dataset_c = dataset_dict_c.map(tokenize, batched=True)
 
 #print(tokenized_dataset_a,tokenized_dataset_b,tokenized_dataset_c)
 
+train_sets = tokenized_dataset_a.train_test_split(test_size=0.2)
 trainer_a = Trainer(
     model=model_a,
     args=get_train_args("./results/a"),
-    train_dataset=tokenized_dataset_a.train_test_split(test_size=0.2)["train"],
-    eval_dataset=tokenized_dataset_a.train_test_split(test_size=0.2)["test"],
+    train_dataset=train_sets["train"],
+    eval_dataset=train_sets["test"],
     compute_metrics=compute_metrics,
 )
 
+train_sets = tokenized_dataset_b.train_test_split(test_size=0.2)
 trainer_b = Trainer(
     model=model_b,
     args=get_train_args("./results/b"),
-    train_dataset=tokenized_dataset_b.train_test_split(test_size=0.2)["train"],
-    eval_dataset=tokenized_dataset_b.train_test_split(test_size=0.2)["test"],
+    train_dataset=train_sets["train"],
+    eval_dataset=train_sets["test"],
     compute_metrics=compute_metrics,
 )
 
+train_sets = tokenized_dataset_c.train_test_split(test_size=0.2)
 trainer_c = Trainer(
     model=model_c,
     args=get_train_args("./results/c"),
-    train_dataset=tokenized_dataset_c.train_test_split(test_size=0.2)["train"],
-    eval_dataset=tokenized_dataset_c.train_test_split(test_size=0.2)["test"],
+    train_dataset=train_sets["train"],
+    eval_dataset=train_sets["test"],
     compute_metrics=compute_metrics,
 )
 
 #trainer_a.train()
-#trainer_b.train()
-trainer_c.train()
+trainer_b.train()
+#trainer_c.train()
 
 
 #########
