@@ -16,15 +16,15 @@ def compute_metrics(p):
 
 print(TrainingArguments.__module__)
 
-
-training_args = TrainingArguments(
-    output_dir="./results",
-    eval_strategy="epoch",
-    per_device_train_batch_size=64,
-    per_device_eval_batch_size=64,
-    num_train_epochs=3,
-    weight_decay=0.01,
-)
+def get_train_args(results_route):
+    return TrainingArguments(
+            output_dir=results_route,
+            eval_strategy="epoch", 
+            num_train_epochs=3,
+            weight_decay=0.01,
+            use_cpu=False,
+            auto_find_batch_size= True,
+        )
 
 
 dataset_location = './dataset/olid-training-v1.0.tsv' 
@@ -58,7 +58,7 @@ print(tokenized_dataset_a,tokenized_dataset_b,tokenized_dataset_c)
 
 trainer_a = Trainer(
     model=model_a,
-    args=training_args,
+    args=get_train_args("./results/a"),
     train_dataset=tokenized_dataset_a.train_test_split(test_size=0.2)["train"],
     eval_dataset=tokenized_dataset_a.train_test_split(test_size=0.2)["test"],
     compute_metrics=compute_metrics,
@@ -66,7 +66,7 @@ trainer_a = Trainer(
 
 trainer_b = Trainer(
     model=model_b,
-    args=training_args,
+    args=get_train_args("./results/b"),
     train_dataset=tokenized_dataset_b.train_test_split(test_size=0.2)["train"],
     eval_dataset=tokenized_dataset_b.train_test_split(test_size=0.2)["test"],
     compute_metrics=compute_metrics,
@@ -74,15 +74,18 @@ trainer_b = Trainer(
 
 trainer_c = Trainer(
     model=model_c,
-    args=training_args,
+    args=get_train_args("./results/c"),
     train_dataset=tokenized_dataset_c.train_test_split(test_size=0.2)["train"],
     eval_dataset=tokenized_dataset_c.train_test_split(test_size=0.2)["test"],
     compute_metrics=compute_metrics,
 )
 
 trainer_a.train()
-#trainer_b.train()
-#trainer_c.train()
+trainer_b.train()
+trainer_c.train()
+
+
+#########
 
 
 
